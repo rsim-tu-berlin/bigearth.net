@@ -1,0 +1,651 @@
+---
+layout: index
+---
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark py-lg-2">
+      <a class="navbar-brand text-expanded" href="#">BigEarthNet <span class="versioning">v1.0</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse mr-auto" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-expanded" href="#about">About</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-expanded" href="#downloads">Downloads</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-expanded" href="#news">News</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-expanded" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-expanded" href="#footer">Contact</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <!-- Intro Banner-->
+    <header class="masthead">
+      <div class="container d-flex h-25 align-items-center">
+        <div class="mx-auto text-center">
+          <h1 class="mx-auto my-0 mb-3" id="header-title">BigEarthNet</h1S>
+          <h2 class="mx-auto mt-0 mb-5">A Large-Scale Sentinel Benchmark Archive</h2>
+        </div>
+      </div>
+    </header>
+    <!-- End Intro Banner-->
+
+    <!-- Logos -->
+    <section class="features-icons" id="logos">
+      <div class="container">
+
+        <div class="row">
+          <div class="col">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon text-center">
+                <a href="https://www.tu-berlin.de" target="_blank">
+                  <img src="{{ site.base_url }}static/img/logos/TU-Berlin.svg" class="img-responsive center-block" />
+                </a>
+              </div>
+              <h3></h3>
+              <p class="lead mb-0"></p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon text-center">
+                <a href="https://rsim.berlin" target="_blank">
+                  <img src="{{ site.base_url }}static/img/logos/RSiM.png" class="img-responsive center-block" style="height: 50px"/>
+                </a>
+              </div>
+              <h3></h3>
+              <p class="lead mb-0"></p>
+            </div>
+          </div>
+
+          <div class="col mx-auto">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon text-center">
+                <a href="https://www.dima.tu-berlin.de/menue/database_systems_and_information_management_group/" target="_blank">
+                  <img src="{{ site.base_url }}static/img/logos/DIMA.png" class="img-responsive center-block" style="height: 70px" />
+                </a>
+              </div>
+              <h3></h3>
+              <p class="lead mb-0"></p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon text-center">
+                <a href="http://www.bigearth.eu" target="_blank">
+                  <img src="{{ site.base_url }}static/img/logos/BigEarth.png" class="img-responsive center-block" />
+                </a>
+              </div>
+              <h3></h3>
+              <p class="lead mb-0"></p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon text-center">
+                <a href="http://bifold.berlin" target="_blank">
+                  <img src="{{ site.base_url }}static/img/logos/bifold.png" class="img-responsive center-block" />
+                </a>
+              </div>
+              <h3></h3>
+              <p class="lead mb-0"></p>
+            </div>
+          </div>
+
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container text-justify">
+        <div class="row align-items-center">
+          <h2 class="font-color-ben">About BigEarthNet</h2>
+        </div>
+        <div class="row align-items-center">
+          <p>
+            The <i>BigEarthNet</i> archive was constructed by the Remote Sensing Image Analysis <a href="https://rsim.berlin">(RSiM)</a> Group and the Database Systems and Information Management <a href="https://www.dima.tu-berlin.de/menue/database_systems_and_information_management_group/?no_cache=1">(DIMA)</a> Group
+            at the Technische Universität Berlin <a href="https://www.tu-berlin.de/menue/home/parameter/en/">(TU Berlin)</a>. This work is supported by the <a href="https://erc.europa.eu" target="_blank">European Research Council</a> under the ERC Starting Grant <a href="http://bigearth.eu/"><i>BigEarth</i></a> and
+            by the Berlin Institute for the Foundations of Learning and Data <a href="http://bifold.berlin" target="_blank">(BIFOLD)</a>. Before BIFOLD, the Berlin Big Data Center <a href="http://www.bbdc.berlin/home/">(BBDC)</a> supported the work.
+          </p>
+        </div>
+
+        <div class="row align-items-center">
+          <p>
+            <i>BigEarthNet</i> is a benchmark archive, consisting of <b>590,326</b> pairs of <b>Sentinel-1</b> and <b>Sentinel-2</b> image patches.
+            The first version (v1.0-beta) of <i>BigEarthNet</i> includes only Sentinel 2 images.
+            Recently, it has been enriched by Sentinel-1 images to create a multi-modal <i>BigEarthNet</i> benchmark archive (called also as BigEarthNet-MM).
+          </p>
+        </div>
+
+        <div class="row align-items-center d-flex align-items-stretch mb-4">
+          <div class="col-sm-6">
+
+            <div class="card m-2 h-100">
+              <!-- <img class="card-img-top" src="{{ site.base_url }}static/img/sentinel_2.jpg" alt=""> -->
+              <div class="card-header text-center">
+                <h5>BigEarthNet with Sentinel-2 Image Patches</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  To construct <i>BigEarthNet</i> with Sentinel-2 image patches (called as <b>BigEarthNet-S2</b> now, previously <i>BigEarthNet</i>),
+                  125 Sentinel-2 tiles acquired between June 2017 and May 2018 over the 10 countries
+                  (Austria, Belgium, Finland, Ireland, Kosovo, Lithuania, Luxembourg, Portugal, Serbia, Switzerland) of Europe were initially selected.
+                   All the tiles were atmospherically corrected by the Sentinel-2 Level 2A product generation and formatting tool (sen2cor).
+                   Then, they were divided into 590,326 non-overlapping image patches.
+                   Each image patch was annotated by the multiple land-cover classes (i.e., multi-labels)
+                   that were provided from the CORINE Land Cover database of the year 2018 (CLC 2018). The labels in BigEarthNet belong to the initial release of the labels in 2018.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="#downloads" class="card-link"><i class="fas fa-download fa-x font-color-ben mb-2"></i> Download BigEarthNet-S2</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-sm-6">
+
+            <div class="card m-2 h-100">
+              <!-- <img class="card-img-top" src="{{ site.base_url }}static/img/sentinel_1.jpg" alt=""> -->
+              <div class="card-header text-center">
+                <h5>BigEarthNet with Sentinel-1 Image Patches</h5>
+              </div>
+
+              <div class="card-body">
+                <!-- <h5 class="card-title"></h5> -->
+                <p class="card-text">
+                  To construct <i>BigEarthNet</i> with Sentinel-1 image patches (called as <b>BigEarthNet-S1</b>), 321 Sentinel-1 scenes acquired
+                  between June 2017 and May 2018 that jointly cover the area of all original 125 Sentinel-2 tiles with close temporal
+                  proximity were selected and processed. BigEarthNet-S1 consists of 590,326 preprocessed Sentinel-1 image patches -
+                  one for each Sentinel-2 patch. A more detailed explanation on the processing is given in its dataset description document.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="#downloads" class="card-link"><i class="fas fa-download fa-x font-color-ben mb-2"></i> Download BigEarthNet-S1</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row align-items-center">
+          <p>
+            For the details about <i>BigEarthNet</i>, please see our papers:
+          </p>
+        </div>
+
+        <div class="row align-items-center">
+          <blockquote class="blockquote text-left mx-auto">
+            <p>G. Sumbul, M. Charfuelan, B. Demir, V. Markl, <i>"<a href="http://bigearth.net/static/documents/BigEarthNet_IGARSS_2019.pdf" style="font-weight: normal;" target="_blank">BigEarthNet: A Large-Scale Benchmark Archive for Remote Sensing Image Understanding</a>",  IEEE International Geoscience and Remote Sensing Symposium, pp. 5901-5904, Yokohama, Japan, 2019</i>.</p>
+          </blockquote>
+
+          <blockquote class="blockquote text-left mx-auto">
+            <p>G. Sumbul, A. d. Wall, T. Kreuziger, F. Marcelino, H. Costa, P. Benevides, M. Caetano, B. Demir, V. Markl, <i>"<a href="https://arxiv.org/abs/2105.07921" style="font-weight: normal;" target="_blank">BigEarthNet-MM: A Large Scale Multi-Modal Multi-Label Benchmark Archive for Remote Sensing Image Classification and Retrieval</a>",  IEEE Geoscience and Remote Sensing Magazine, 2021, doi: 10.1109/MGRS.2021.3089174.</i></p>
+          </blockquote>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="separator-section"></section>
+
+    <!-- Download Section -->
+    <section id="downloads" class="section">
+      <div class="container text-justify">
+        <div class="row align-items-center">
+          <h2 class="font-color-ben">Downloads</h2>
+        </div>
+
+        <div class="row align-items-center">
+          <p>
+          If you use the <i>BigEarthNet</i> archive, please cite our papers given below:</p>
+          <blockquote class="blockquote text-left mx-auto my-2">
+            <p>G. Sumbul, M. Charfuelan, B. Demir, V. Markl, <i>"<a href="http://bigearth.net/static/documents/BigEarthNet_IGARSS_2019.pdf" style="font-weight: normal;" target="_blank">BigEarthNet: A Large-Scale Benchmark Archive for Remote Sensing Image Understanding</a>",  IEEE International Geoscience and Remote Sensing Symposium, pp. 5901-5904, Yokohama, Japan, 2019</i>.</p>
+          </blockquote>
+
+          <blockquote class="blockquote text-left mx-auto">
+            <p>G. Sumbul, A. d. Wall, T. Kreuziger, F. Marcelino, H. Costa, P. Benevides, M. Caetano, B. Demir, V. Markl, <i>"<a href="https://arxiv.org/abs/2105.07921" style="font-weight: normal;" target="_blank">BigEarthNet-MM: A Large Scale Multi-Modal Multi-Label Benchmark Archive for Remote Sensing Image Classification and Retrieval</a>",  IEEE Geoscience and Remote Sensing Magazine, 2021, doi: 10.1109/MGRS.2021.3089174.</i></p>
+          </blockquote>
+        </div>
+
+        <div class="row flex-fill fill d-flex">
+
+          <div class="col-lg-4">
+
+            <div class="card m-1">
+              <div class="card-header text-center">
+                <h4>BigEarthNet-S2</h4>
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title font-color-ben text-center card-title-extended">
+                  <a href="/downloads/BigEarthNet-S2-v1.0.tar.gz"><i class="fas fa-download fa-x font-color-ben mb-2"></i> (~66GB)</a><span class="versioning">v1.0</span>
+                </h3>
+              </div>
+
+              <div class="card-body">
+                <div class="card-text font-color-ben text-left">
+                  <p class="lead mb-0"><a href="/static/documents/Description_BigEarthNet-S2.pdf" target="_blank"><i class="fas fa-file-pdf btn-link"></i> Dataset Description</a></p>
+                  <p class="lead mb-0"><a href="/static/documents/patches_with_seasonal_snow.csv" target="_blank"><i class="fas fa-file-csv btn-link"></i> Patches with seasonal snow</a></p>
+                  <p class="lead mb-0"><a href="/static/documents/patches_with_cloud_and_shadow.csv" target="_blank"><i class="fas fa-file-csv btn-link"></i> Patches with cloud & shadow</a></p>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <div class="card-text font-color-ben">
+                  <p class="lead mb-0"><a href="https://git.tu-berlin.de/rsim/BigEarthNet-S2_tools" target="_blank"><i class="fas fa-tools fa-x font-color-ben mb-2"></i> S2 Tools</a></p>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <div class="card-text font-color-ben">
+                  <h4>Deep Learning Models</h4>
+                  <p class="lead mb-0"><a href="https://git.tu-berlin.de/rsim/BigEarthNet-S2_43-classes_models" target="_blank"><i class="fab fa-gitlab btn-link"></i> 43 Labels</a></p>
+                  <p class="lead mb-0"><a href="https://git.tu-berlin.de/rsim/BigEarthNet-S2_19-classes_models" target="_blank"><i class="fab fa-gitlab btn-link"></i> 19 Labels</a></p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-lg-4">
+
+            <div class="card m-1">
+              <div class="card-header text-center">
+                <h4>BigEarthNet-S1</h4>
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title font-color-ben text-center  card-title-extended">
+                  <a href="/downloads/BigEarthNet-S1-v1.0.tar.gz"><i class="fas fa-download fa-x font-color-ben mb-2"></i> (~55GB)</a><span class="versioning">v1.0-beta</span>
+                </h3>
+              </div>
+
+              <div class="card-body">
+                <div class="card-text font-color-ben text-left">
+                  <p class="lead mb-0"><a href="/static/documents/Description_BigEarthNet-S1.pdf" target="_blank"><i class="fas fa-file-pdf btn-link"></i> Dataset Description</a></p>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <div class="card-text font-color-ben">
+                  <p class="lead mb-0"><a href="https://git.tu-berlin.de/rsim/BigEarthNet-S1_tools" target="_blank"><i class="fas fa-tools fa-x font-color-ben mb-2"></i> S1 Tools</a></p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-lg-4">
+
+            <div class="card m-1">
+              <div class="card-header text-center">
+                <h4>BigEarthNet-MM</h4>
+              </div>
+
+              <div class="card-body">
+                <div class="card-title font-color-ben card-title-extended">
+                  <p class="lead mb-0"><i class="fas fa-check btn-link"></i> Download BigEarthNet-S2</p>
+                  <p class="lead mb-0"><i class="fas fa-check btn-link"></i> Download BigEarthNet-S1</p>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <div class="card-text font-color-ben text-left">
+                  <p class="lead mb-0"><a href="/static/documents/Description_BigEarthNet-MM.pdf" target="_blank"><i class="fas fa-file-pdf btn-link"></i> Dataset Description</a></p>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <div class="card-text font-color-ben">
+                  <p class="lead mb-0"><a href="https://git.tu-berlin.de/rsim/BigEarthNet-MM_tools" target="_blank"><i class="fas fa-tools fa-x font-color-ben mb-2"></i> MM Tools</a></p>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <div class="card-text font-color-ben">
+                  <h4>Deep Learning Models</h4>
+                  <p class="lead mb-0"><a href="https://git.tu-berlin.de/rsim/BigEarthNet-MM_19-classes_models" target="_blank"><i class="fab fa-gitlab btn-link"></i> 19 Labels</a></p>
+                </div>
+              </div>
+
+            </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="section mt-4">
+      <div class="container text-justify">
+
+        <div class="row align-items-center">
+          <h2 class="font-color-ben">News</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 p-0">
+
+          <div id="accordion" class="mx-0">
+            <!-- Card #1 -->
+            <div class="card">
+              <div class="card-header" id="headingEleven">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                    2021-07-16 - CLC labels in BigEarthNet
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordion">
+                <div class="card-body">
+                  The CLC labels in BigEarthNet belong to the initial release of the CLC 2018 products in 2018.
+                  Since 2018, there are some revisions applied to CLC 2018 products.  For details, please visit:
+                  <a href="https://land.copernicus.eu/pan-european/corine-land-cover/clc2018?tab=metadata" target="_blank">https://land.copernicus.eu/pan-european/corine-land-cover/clc2018?tab=metadata</a>.
+                  The current version of the BigEarthNet does not include the CLC revisions.
+                </div>
+              </div>
+            </div>
+
+            <!-- Card #1 -->
+            <div class="card">
+              <div class="card-header" id="headingTen">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                    2021-01-11 - Research Associate positions in Deep Learning for Satellite Image Analysis
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
+                <div class="card-body">
+                  For the details of the positions, please follow this <a href="https://rsim.berlin/open_positions" target="_blank">link</a>.
+                </div>
+              </div>
+            </div>
+
+            <!-- Card #1 -->
+            <div class="card">
+              <div class="card-header" id="headingNine">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                    2020-12-23 - BigEarthNet includes also Sentinel-1 images now!
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+                <div class="card-body">
+                  BigEarthNet has been enriched by including Sentinel-1 images.
+                  The new version contains 590,326 pairs of Sentinel-1 and Sentinel-2 image patches to support
+                  research studies on multi-modal/cross-modal image classification, retrieval and search.
+                </div>
+              </div>
+            </div>
+
+            <!-- Card #1 -->
+            <div class="card">
+              <div class="card-header" id="headingEight">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    2020-07-26 - BigEarthNet related datasets and software tools
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                <div class="card-body">
+                    There are several researchers and colleagues all around the world, contributing to advance BigEarthNet through their BigEarthNet related software tools and datasets. We appreciate their excellent work and effort!
+                    <br />
+                    For details, please see <a href="https://bigearth.eu/externals" target="_blank">BigEarthNet Externals</a>.
+                </div>
+              </div>
+            </div>
+
+            <!-- Card #1 -->
+            <div class="card">
+              <div class="card-header" id="headingSeven">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    2020-04-10 - Post-doc positions in Deep Learning for Satellite Image Analysis
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                <div class="card-body">
+                    We are looking for a highly motivated Postdoctoral Researcher with a strong record of accomplishment in machine learning and computer vision. Successful candidate will conduct research and develop advanced deep learning based algorithms for satellite image search/retrieval from large-scale data archives and semantic scene understanding. This will entail the development of novel deep learning models that can address the problems on incomplete, noisy and imbalanced training sets for scalable image search, retrieval and classification.
+                    <br />
+                    For details, please contact Prof. Demir (<a href="mailto:demir@tu-berlin.de">demir@tu-berlin.de</a>).
+                </div>
+              </div>
+            </div>
+
+            <!-- Card #1 -->
+            <div class="card">
+              <div class="card-header" id="headingSix">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    2020-01-26 - BigEarthNet-19 Deep Learning Models
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                <div class="card-body">
+                    We made public an alternative class-nomenclature to allow DL models for better learning&describing the complex spatial/spectral information content of Sentinel-2 images in BigEarthNet. The new class nomenclature is the product of a collaboration between the <a href="http://www.dgterritorio.pt/" target="_blank">Direção-Geral do Território in Lisbon, Portugal</a> and the <a href="https://rsim.berlin" target="_blank">Remote Sensing Image Analysis (RSiM)</a> group at TU Berlin, Germany. For details, please visit this <a href="https://git.tu-berlin.de/rsim/bigearthnet-19-models" target="_blank">link</a>.
+                </div>
+              </div>
+            </div>
+
+            <!-- Card #1 -->
+            <div class="card">
+              <div class="card-header" id="headingFive">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    2020-01-25 - PhD position in Deep Learning for Earth Observation
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                <div class="card-body">
+                    We are looking for highly motivated PhD candidates to join the <a href="https://rsim.berlin" target="_blank">Remote Sensing Image Analysis (RSiM)</a> group at the Faculty of Electrical Engineering and Computer Science, Technische Universität Berlin, Germany. The research of the PhD candidates will aim at the participation in the research activities of the Remote Sensing Image Analysis (RSiM) group in the field of machine learning and big data management for earth observation and the development of image search and retrieval methods and systems for querying large-scale satelilite image archives in the compressed domain. Developed methods will aim at enabling accurate and scalable image indexing and retrieval by efficiently characterizing the high-spectral and spatial information. Very good command of German and English is required. For details, please visit this <a href="https://tub.stellenticket.de/de/offers/75545/" target="_blank">link</a>.
+                </div>
+              </div>
+            </div>
+
+            <!-- Card #1 -->
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    2019-05-15 - Sentinel 2 Patch-Tile Relation within the BigEarthNet
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body">
+                    We prepared a script that returns the original Level-1C tile information of each Sentinel-2 image patch given in the BigEarthNet. To download the script, see: <a href="https://git.tu-berlin.de/rsim/bigearthnet-tools" target="_blank">https://git.tu-berlin.de/rsim/bigearthnet-tools</a>. Note that all the considered Level-1C tiles were atmospherically corrected by the Sentinel-2 Level 2A product generation and formatting tool (sen2cor) before creating the patches. Thus, the script is useful to have access to the original Level-1C tile of each patch.
+                </div>
+              </div>
+            </div>
+
+            <!-- Card #1 -->
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    2019-03-12 - Lists of BigEarthNet patches with high density snow and cloud
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Lists of BigEarthNet patches with high density snow and cloud are made public @ <a href="https://t.co/NfF82l8cuO">https://t.co/NfF82l8cuO</a>. For the scene classification, content based image search/retrieval studies, we suggest not to use these image patches in training/test/validation of the ML/DL algorithms.</p>&mdash; BigEarth (@BigEarthERC) <a href="https://twitter.com/BigEarthERC/status/1105502367783501825?ref_src=twsrc%5Etfw">March 12, 2019</a></blockquote>
+                </div>
+              </div>
+            </div>
+            <!-- Card #1 -->
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    2019-03-02 - Image patches with seasonal snow cover
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  In the BigEarthNet, we have kept the image patches with seasonal snow cover. This is to allow tag based search and retrieval studies independently from seasons. However, soon we will provide the list of patches with seasonal snow that can be important for the scene classification and content based image search/retrieval studies.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    2019-02-19 - BigEarthNet has been released!
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  BigEarthNet has been released at the Big Data from Space (BIDS'19) Conference in Munich, Germany.
+
+                  <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/BigEarthNet?src=hash&amp;ref_src=twsrc%5Etfw">#BigEarthNet</a> was introduced @ BiDS! It is a new large-scale Sentinel-2 benchmark archive, consisting of 590,326 Sentinel-2 image patches. For details, visit <a href="https://t.co/NfF82l8cuO">https://t.co/NfF82l8cuO</a><a href="https://twitter.com/hashtag/BIDS19?src=hash&amp;ref_src=twsrc%5Etfw">#BIDS19</a> <a href="https://twitter.com/hashtag/ESA?src=hash&amp;ref_src=twsrc%5Etfw">#ESA</a> <a href="https://twitter.com/hashtag/Sentinel2?src=hash&amp;ref_src=twsrc%5Etfw">#Sentinel2</a> <a href="https://twitter.com/hashtag/EarthObservation?src=hash&amp;ref_src=twsrc%5Etfw">#EarthObservation</a> <a href="https://twitter.com/hashtag/BigData?src=hash&amp;ref_src=twsrc%5Etfw">#BigData</a> <a href="https://twitter.com/hashtag/DeepLearning?src=hash&amp;ref_src=twsrc%5Etfw">#DeepLearning</a> <a href="https://twitter.com/hashtag/ComputerVision?src=hash&amp;ref_src=twsrc%5Etfw">#ComputerVision</a> <a href="https://t.co/3NlajS800G">pic.twitter.com/3NlajS800G</a></p>&mdash; BigEarth (@BigEarthERC) <a href="https://twitter.com/BigEarthERC/status/1098176728319606784?ref_src=twsrc%5Etfw">February 20, 2019</a></blockquote>
+                  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section mt-4">
+      <div class="container text-justify">
+
+        <div class="row align-items-center">
+          <h2 class="font-color-ben">FAQ</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 p-0">
+
+          <div id="accordion" class="mx-0">
+            <!-- Card #1 -->
+            <div class="card">
+              <div class="card-header" id="faqTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collasefaqTwo" aria-expanded="false" aria-controls="collasefaqTwo">
+                    Does BigEarthNet include Sentinel-2 patches containing seasonal-snow cover?
+                  </button>
+                </h5>
+              </div>
+              <div id="collasefaqTwo" class="collapse" aria-labelledby="faqTwo" data-parent="#accordion">
+                <div class="card-body">
+                  Yes, some Sentinel-2 patches include seasonal-snow. We kept them in the archive to allow tag-based search and retrieval studies independently from seasons. However, if you work on scene classification, content-based image retrieval and search only by using Sentinel-2 image patches, we suggest not to include patches fully covered by seasonal-snow for training and test stages of the machine/deep learning algorithms. The list of these patches is provided in the ‘Download’ page.
+                </div>
+              </div>
+            </div>
+            <!-- Card #1 -->
+            <div class="card">
+              <div class="card-header" id="faqOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsefaqOne" aria-expanded="false" aria-controls="collapsefaqOne">
+                    Does BigEarthNet include Sentinel-2 patches containing cloud and cloud shadow?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapsefaqOne" class="collapse" aria-labelledby="faqOne" data-parent="#accordion">
+                <div class="card-body">
+                  Sentinel-2 tiles in the BigEarthNet are associated to cloud cover less than 1%, whereas in some cases the cloud cover are populated within some patches. We kept these patches in the BigEarthNet to allow multi-modal learning studies (soon Sentinel-1 images will be also included in BigEarthNet). However, if you work on scene classification, content-based image retrieval and search only by using Sentinel-2 image patches, we suggest not to include these patches for training and test stages of the machine/deep learning algorithms. The list of patches fully covered by cloud and cloud shadow is provided in the ‘Download’ page.
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" style="margin-top: 50px">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 my-lg-1">
+            The BigEarthNet Archive is licensed under <a href="/downloads/documents/License.pdf" download>the Community Data License Agreement – Permissive, Version 1.0</a>.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="separator-section-1-line"></section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 h-100 text-center text-lg-left my-auto">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item">Email:
+                <a href="mailto:contact@bigearth.net">contact@bigearth.net</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="/imprint" target="_blank">Imprint & Data Privacy</a>
+              </li>
+            </ul>
+            <p class="small mb-4 mb-lg-0" id="footnote">Copyright &copy; BigEarthNet 2019. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Python scripts</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <div class="modal-body">
+            <h5>Python script to read Sentinel-2 image patches in the BigEarthNet</h5>
+            <p>This script reads GeoTIFF files each of which is for one spectral
+            band of a Sentinel-2 image patch in the BigEarthNet Archive.
+            The script is capable of reading either  all spectral bands of one patch
+            folder (-p option) or all bands for all patches (-r option).
+            After reading files, Sentinel-2 image patch values can be used as numpy array
+            for further purposes.</p>
+            <a href="/downloads/tools/read_patch.py" download>Download the Python script</a>
+
+            <h5>Python script to eliminite/filter image patches in the BigEarthNet</h5>
+            <p>
+
+            </p>
+            <a href="/downloads/tools/read_patch.py" download>Download the Python script</a>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
