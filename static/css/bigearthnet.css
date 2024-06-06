@@ -2,6 +2,11 @@
 	color: #326b34;
 }
 
+a>img:hover {
+	transform: scale(1.1);
+	transition-duration: 1s;
+}
+
 /* navbar overwritings */
 .navbar {
 	background-color: #326b34;
@@ -261,6 +266,8 @@ section::before {
 .card-title-extended {
 	min-height: 70px;
 	margin-top: 20px;
+	font-size: 1.75em;
+	font-weight: semi-bold;
 }
 
 
@@ -268,8 +275,9 @@ section::before {
 footer {
 	background-color: #326b34;
 	color: #fff;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	/* padding-top: 50px; */
+	/* padding-bottom: 50px; */
+	padding: 1rem;
 }
 
 footer a,
@@ -293,4 +301,13 @@ footer #footnote {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
+}
+
+#deprecation-banner {
+	position: sticky;
+	text-align: center;
+	bottom: 0;
+	color: #721c24;
+	background: #f8d7da;
+	padding: 1.25rem 1rem;
 }
