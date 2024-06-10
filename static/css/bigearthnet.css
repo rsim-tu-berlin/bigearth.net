@@ -1,3 +1,8 @@
+:root {
+	--warn-bg-color: #f8d7da;
+	--warn-fg-color: #721c24;
+}
+
 .font-color-ben {
 	color: #326b34;
 }
@@ -25,6 +30,15 @@ a>img:hover {
 
 .navbar-dark .navbar-nav .nav-link {
 	color: #fff;
+}
+
+.navbar a.outdated-version {
+	color: var(--warn-fg-color);
+	background-color: var(--warn-bg-color);
+	padding: .25em;
+	text-shadow: none;
+	border: 1px solid var(--warn-fg-color);
+	border-radius: 6px;
 }
 
 
@@ -307,7 +321,8 @@ footer #footnote {
 	position: sticky;
 	text-align: center;
 	bottom: 0;
-	color: #721c24;
-	background: #f8d7da;
-	padding: 1.25rem 1rem;
+	color: var(--warn-fg-color);
+	background: var(--warn-bg-color);
+	padding: 1.5rem 1.25rem;
+	font-size: 1.25rem;
 }
