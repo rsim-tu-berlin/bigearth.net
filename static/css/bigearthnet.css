@@ -1,10 +1,49 @@
 :root {
 	--warn-bg-color: #f8d7da;
 	--warn-fg-color: #721c24;
+	--primary-color: #326b34;
+}
+
+h2,
+h3,
+h4 {
+	color: var(--primary-color);
+}
+
+h3 {
+	font-size: 1.25em;
+}
+
+#downloads .card {
+	min-height: 15em;
+}
+
+#downloads .card-body {
+	color: var(--primary-color);
+	text-align: center;
+}
+
+#downloads div.card-body>a {
+	font-size: 1.75em;
+	font-weight: 400;
+}
+
+
+div.card h3 {
+	color: white;
+}
+
+section:not(:first-of-type) {
+	margin-top: 2em;
+}
+
+header span {
+	font-size: 2em;
+	display: block;
 }
 
 .font-color-ben {
-	color: #326b34;
+	color: var(--primary-color);
 }
 
 a>img:hover {
@@ -14,8 +53,8 @@ a>img:hover {
 
 /* navbar overwritings */
 .navbar {
-	background-color: #326b34;
-	text-shadow: 0px 0px 1em black;
+	background-color: var(--primary-color);
+	text-shadow: 0px 0px 1.2em black;
 }
 
 .navbar a {
@@ -24,7 +63,7 @@ a>img:hover {
 }
 
 .navbar-nav .dropdown-menu {
-	background-color: #326b34;
+	background-color: var(--primary-color);
 	color: #fff
 }
 
@@ -76,7 +115,7 @@ section#logos img {
 
 section a,
 section a:hover {
-	color: #326b34;
+	color: var(--primary-color);
 }
 
 section#about p a {
@@ -85,17 +124,17 @@ section#about p a {
 
 section h3 a,
 section h3 a:hover {
-	color: #326b34;
+	color: var(--primary-color);
 }
 
 #about b {
-	color: #326b34;
+	color: var(--primary-color);
 }
 
 #about .card .card-header,
 #downloads .card .card-header {
 	color: #fff;
-	background-color: #326b34;
+	background-color: var(--primary-color);
 }
 
 #about .card:hover,
@@ -154,7 +193,7 @@ section::before {
 }
 
 .btn-link {
-	color: #326b34;
+	color: var(--primary-color);
 }
 
 /*--------------------------------------------------------------
@@ -287,7 +326,7 @@ section::before {
 
 /** footer changes **/
 footer {
-	background-color: #326b34;
+	background-color: var(--primary-color);
 	color: #fff;
 	/* padding-top: 50px; */
 	/* padding-bottom: 50px; */
@@ -325,4 +364,38 @@ footer #footnote {
 	background: var(--warn-bg-color);
 	padding: 1.5rem 1.25rem;
 	font-size: 1.25rem;
+}
+
+#v1-button {
+	position: fixed;
+	text-align: center;
+	bottom: 1rem;
+	right: 1rem;
+	/* color: var(--warn-fg-color); */
+	/* background: var(--warn-bg-color); */
+	color: white;
+	background: var(--primary-color);
+	padding: 0.75rem 0.625rem;
+	font-size: 0.75rem;
+	border: 1px solid black;
+	border-radius: 6px;
+	text-decoration: none;
+}
+
+#v1-button:focus-within,
+#v1-button:hover {
+	transform: scale(1.1);
+	transition-duration: 1s;
+}
+
+.additional-links {
+	font-size: 1.2em;
+}
+
+.additional-links .container {
+	padding-left: 0;
+}
+
+.additional-links ::marker {
+	color: var(--primary-color);
 }

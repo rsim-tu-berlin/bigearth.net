@@ -38,7 +38,7 @@ layout: index
   <div class="container d-flex h-25 align-items-center">
     <div class="mx-auto text-center">
       <h1 class="mx-auto my-0 mb-3" id="header-title">BigEarthNet v1.0</h1>
-      <h2 class="mx-auto mt-0 mb-5">A Large-Scale Sentinel Benchmark Archive</h2>
+      <span class="mx-auto mt-0 mb-5">A Large-Scale Sentinel Benchmark Archive</span>
     </div>
   </div>
 </header>
@@ -147,7 +147,7 @@ layout: index
         <div class="card m-2 h-100">
           <!-- <img class="card-img-top" src="{{ site.base_url }}static/img/sentinel_2.jpg" alt=""> -->
           <div class="card-header text-center">
-            <h5>BigEarthNet v1.0 with Sentinel-2 Image Patches</h5>
+            <h3>BigEarthNet v1.0 with Sentinel-2 Image Patches</h3>
           </div>
           <div class="card-body">
             <p class="card-text">
@@ -158,7 +158,7 @@ layout: index
               (Austria, Belgium, Finland, Ireland, Kosovo, Lithuania, Luxembourg, Portugal, Serbia, Switzerland) of
               Europe were initially selected.
               All the tiles were atmospherically corrected by the Sentinel-2 Level 2A product generation and formatting
-              tool (sen2cor).
+              tool (sen2cor v2.5.5).
               Then, they were divided into 590,326 non-overlapping image patches.
               Each image patch was annotated by the multiple land-cover classes (i.e., multi-labels)
               that were provided from the CORINE Land Cover database of the year 2018 (CLC 2018). The labels in
@@ -177,7 +177,7 @@ layout: index
         <div class="card m-2 h-100">
           <!-- <img class="card-img-top" src="{{ site.base_url }}static/img/sentinel_1.jpg" alt=""> -->
           <div class="card-header text-center">
-            <h5>BigEarthNet v1.0 with Sentinel-1 Image Patches</h5>
+            <h3>BigEarthNet v1.0 with Sentinel-1 Image Patches</h3>
           </div>
 
           <div class="card-body">
@@ -213,9 +213,8 @@ layout: index
 
     <div class="row align-items-center">
       <blockquote class="blockquote text-left mx-auto">
-        <p>G. Sumbul, M. Charfuelan, B. Demir, V. Markl, <i>"<a
-              href="{{ site.base_url }}static/documents/BigEarthNet_IGARSS_2019.pdf" style="font-weight: normal;"
-              target="_blank">BigEarthNet: A Large-Scale Benchmark Archive for Remote
+        <p>G. Sumbul, M. Charfuelan, B. Demir, V. Markl, <i>"<a href="https://arxiv.org/abs/1902.06148"
+              style="font-weight: normal;" target="_blank">BigEarthNet: A Large-Scale Benchmark Archive for Remote
               Sensing Image Understanding</a>",
             IEEE International Geoscience and Remote Sensing Symposium, pp. 5901-5904, Yokohama, Japan, 2019</i>.</p>
       </blockquote>
@@ -254,11 +253,9 @@ layout: index
           </div>
 
           <div class="card-body">
-            <div class="card-title font-color-ben text-center card-title-extended">
-              <a href="{{ site.data.urls.v1-dataset-base-url }}/BigEarthNet-S2-v1.0.tar.gz"><i
-                  class="fas fa-download fa-x font-color-ben mb-2"></i>
-                (~66GB)</a><span class="versioning">v1.0</span>
-            </div>
+            <a href="{{ site.data.urls.v1-dataset-base-url }}/BigEarthNet-S2-v1.0.tar.gz"><i
+                class="fas fa-download fa-x font-color-ben mb-2"></i>
+              (~66GB)<span class="versioning">v1.0</span></a>
           </div>
 
           <div class="card-body">
@@ -272,7 +269,7 @@ layout: index
             </div>
           </div>
 
-          <div class="card-body">
+          <div class="card-body text-left">
             <div class="card-text font-color-ben">
               <p class="lead mb-0"><a href="https://git.tu-berlin.de/rsim/BigEarthNet-S2_tools" target="_blank"><i
                     class="fas fa-tools fa-x font-color-ben mb-2"></i> S2 Tools</a></p>
@@ -280,7 +277,7 @@ layout: index
           </div>
 
           <div class="card-body">
-            <div class="card-text font-color-ben">
+            <div class="card-text font-color-ben text-left">
               <h4>Deep Learning Models</h4>
               <p class="lead mb-0"><a href="https://git.tu-berlin.de/rsim/BigEarthNet-S2_43-classes_models"
                   target="_blank"><i class="fab fa-gitlab btn-link"></i> 43 Labels</a></p>
@@ -300,10 +297,8 @@ layout: index
           </div>
 
           <div class="card-body">
-            <div class="card-title font-color-ben text-center  card-title-extended">
-              <a href="/downloads/BigEarthNet-S1-v1.0.tar.gz"><i class="fas fa-download fa-x font-color-ben mb-2"></i>
-                (~55GB)</a><span class="versioning">v1.0-beta</span>
-            </div>
+            <a href="/downloads/BigEarthNet-S1-v1.0.tar.gz"><i class="fas fa-download fa-x font-color-ben mb-2"></i>
+              (~55GB)<span class="versioning">v1.0-beta</span></a>
           </div>
 
           <div class="card-body">
@@ -314,7 +309,7 @@ layout: index
           </div>
 
           <div class="card-body">
-            <div class="card-text font-color-ben">
+            <div class="card-text font-color-ben text-left">
               <p class="lead mb-0"><a href="https://git.tu-berlin.de/rsim/BigEarthNet-S1_tools" target="_blank"><i
                     class="fas fa-tools fa-x font-color-ben mb-2"></i> S1 Tools</a></p>
             </div>
@@ -326,7 +321,7 @@ layout: index
       <div class="col-lg-4">
 
         <div class="card m-1">
-          <div class="card-header text-center">
+          <div class="card-header text-center text-left">
             <h3>BigEarthNet-MM v1.0</h3>
           </div>
 
@@ -345,14 +340,14 @@ layout: index
           </div>
 
           <div class="card-body">
-            <div class="card-text font-color-ben">
+            <div class="card-text font-color-ben text-left">
               <p class="lead mb-0"><a href="https://git.tu-berlin.de/rsim/BigEarthNet-MM_tools" target="_blank"><i
                     class="fas fa-tools fa-x font-color-ben mb-2"></i> MM Tools</a></p>
             </div>
           </div>
 
           <div class="card-body">
-            <div class="card-text font-color-ben">
+            <div class="card-text font-color-ben text-left">
               <h4>Deep Learning Models</h4>
               <p class="lead mb-0"><a href="https://git.tu-berlin.de/rsim/BigEarthNet-MM_19-classes_models"
                   target="_blank"><i class="fab fa-gitlab btn-link"></i> 19 Labels</a></p>
@@ -367,7 +362,7 @@ layout: index
 </section>
 
 <!-- News Section -->
-<section id="news" class="section mt-4">
+<section id="news" class="section">
   <div class="container text-justify">
 
     <div class="row align-items-center">
@@ -647,7 +642,7 @@ layout: index
 </section>
 
 <!-- FAQ Section -->
-<section id="faq" class="section mt-4">
+<section id="faq" class="section">
   <div class="container text-justify">
 
     <div class="row align-items-center">
@@ -713,7 +708,7 @@ layout: index
   <div class="container">
     <div class="row">
       <div class="col-lg-12 my-lg-1">
-        The BigEarthNet Archive is licensed under <a href="/downloads/documents/License.pdf" download>the Community Data
+        The BigEarthNet Archive is licensed under <a href="https://cdla.dev/permissive-1-0/" download>the Community Data
           License Agreement – Permissive, Version 1.0</a>.
       </div>
     </div>
