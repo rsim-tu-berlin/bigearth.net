@@ -160,7 +160,7 @@ layout: index
           </div>
           <div class="card-footer">
             <a href="#downloads" class="card-link"><i class="fas fa-download fa-x font-color-ben mb-2"> Download
-                BigEarthNet-S2</a>
+                BigEarthNet-S2</i></a>
           </div>
         </div>
 
@@ -186,7 +186,7 @@ layout: index
           </div>
           <div class="card-footer">
             <a href="#downloads" class="card-link"><i class="fas fa-download fa-x font-color-ben mb-2"> Download
-                BigEarthNet-S1</a>
+                BigEarthNet-S1</i></a>
           </div>
         </div>
 
@@ -202,12 +202,14 @@ layout: index
 
     <div class="row">
       <blockquote class="blockquote text-left">
-        <p>K. Clasen, L. Hackel, T. Burgert, G. Sumbul, B. Demir, V. Markl, <i>"<a href="https://arxiv.org/"
-              style="font-weight: normal;" target="_blank">
-              reBEN: Refined BigEarthNet Dataset for Remote Sensing Image Analysis</a>", arXiv preprint arXiv:
+        <p>K. Clasen, L. Hackel, T. Burgert, G. Sumbul, B. Demir, V. Markl,
+          <i>"
+            <a href="{{ site.data.urls.reBEN-paper-url }}" target="_blank">
+              reBEN: Refined BigEarthNet Dataset for Remote Sensing Image Analysis
+            </a>
+            ", arXiv preprint arXiv:, 2024
           </i>.
         </p>
-        <!-- ,IEEE International Geoscience and Remote Sensing Symposium, pp. 5901-5904, Yokohama, Japan, 2019</i>. -->
       </blockquote>
     </div>
 
@@ -239,7 +241,7 @@ layout: index
 
           <div class="card-body">
             <div class="card-text">
-              <p class="lead mb-0"><a href="https://huggingface.co/" target="_blank">
+              <p class="lead mb-0"><a href="https://huggingface.co/BIFOLD-BigEarthNetv2-0" target="_blank">
                   🤗 Pretrained S2 Models</a>
               </p>
             </div>
@@ -262,7 +264,7 @@ layout: index
 
           <div class="card-body">
             <div class="card-text">
-              <p class="lead mb-0"><a href="https://huggingface.co/" target="_blank">
+              <p class="lead mb-0"><a href="https://huggingface.co/BIFOLD-BigEarthNetv2-0" target="_blank">
                   🤗 Pretrained S1 Models</a>
               </p>
             </div>
@@ -274,18 +276,22 @@ layout: index
 
         <div class="card m-1">
           <div class="card-header text-center">
-            <h3>BigEarthNet-MM</h3>
+            <h3>BigEarthNet-S1 and S2 (S1+S2)</h3>
           </div>
 
           <div class="card-body">
-            <p class="lead mb-0"><i class="fas fa-check btn-link"></i> Download BigEarthNet-S2</p>
-            <p class="lead mb-0"><i class="fas fa-check btn-link"></i> Download BigEarthNet-S1</p>
+            <a href="/downloads/BigEarthNet-S2-v1.0.tar.gz">
+              <p class="lead mb-0"><i class="fas fa-check btn-link"></i> Download BigEarthNet-S2</p>
+            </a>
+            <a href="/downloads/BigEarthNet-S1-v1.0.tar.gz">
+              <p class="lead mb-0"><i class="fas fa-check btn-link"></i> Download BigEarthNet-S1</p>
+            </a>
           </div>
 
           <div class="card-body">
             <div class="card-text">
-              <p class="lead mb-0"><a href="https://huggingface.co/" target="_blank">
-                  🤗 Pretrained MM Models</a>
+              <p class="lead mb-0"><a href="https://huggingface.co/BIFOLD-BigEarthNetv2-0" target="_blank">
+                  🤗 Pretrained S1+S2 Models</a>
               </p>
             </div>
           </div>
@@ -297,12 +303,12 @@ layout: index
     </div>
 </section>
 
-<section class="additional-links">
+<section id="links" class="additional-links">
   <div class="container">
     <div class="column">
       <h3>Additional Links</h3>
       <ul>
-        <li><a href="{{ site.base_url }}static/documents/Description_BigEarthNet-v2.pdf" target="_blank">Dataset
+        <li><a href="{{ site.base_url }}static/documents/Description_BigEarthNet_v2.pdf" target="_blank">Dataset
             Description Document:</a>
           This document offers insights into the dataset, the directory structure, naming conventions and additional
           metadata files.
@@ -315,10 +321,10 @@ layout: index
           A fast and easy-to-use <b>r</b>emote sensing <b>i</b>mage format <b>co</b>nverter for <b>h</b>igh-throughput
           <b>d</b>eep-<b>l</b>earning.
         </li>
-        <li><a href="https://zenodo.org" target="_blank"> Patches with seasonal snow</a>
-        </li>
-        <li><a href="https://zenodo.org" target="_blank"> Patches with cloud & shadow</a>
-        </li>
+        <!-- <li><a href="https://zenodo.org" target="_blank"> Patches with seasonal snow</a> -->
+        <!-- </li> -->
+        <!-- <li><a href="https://zenodo.org" target="_blank"> Patches with cloud & shadow</a> -->
+        <!-- </li> -->
       </ul>
     </div>
   </div>
@@ -616,19 +622,20 @@ layout: index
           <div class="card">
             <div class="card-header" id="faqTwo">
               <h3 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collasefaqTwo"
-                  aria-expanded="false" aria-controls="collasefaqTwo">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsefaqTwo"
+                  aria-expanded="false" aria-controls="collapsefaqTwo">
                   Does BigEarthNet include Sentinel-2 patches containing seasonal-snow cover?
                 </button>
               </h3>
             </div>
-            <div id="collasefaqTwo" class="collapse" aria-labelledby="faqTwo" data-parent="#accordion">
+            <div id="collapsefaqTwo" class="collapse" aria-labelledby="faqTwo" data-parent="#accordion">
               <div class="card-body">
                 Yes, some Sentinel-2 patches include seasonal-snow. We kept them in the archive to allow tag-based
                 search and retrieval studies independently from seasons. However, if you work on scene classification,
                 content-based image retrieval and search only by using Sentinel-2 image patches, we suggest not to
                 include patches fully covered by seasonal-snow for training and test stages of the machine/deep learning
-                algorithms. The list of these patches is provided in the <a href="#downloads">Download</a> section.
+                algorithms.
+                For more details, see the <a href="#links">dataset description document</a>.
               </div>
             </div>
           </div>
@@ -651,8 +658,7 @@ layout: index
                 Sentinel-2
                 image patches, we suggest not to include these patches for training and test stages of the machine/deep
                 learning algorithms.
-                The list of patches fully covered by clouds and cloud shadows is provided in the
-                <a href="#downloads">Download</a> section.
+                For more details, see the <a href="#links">dataset description document</a>.
               </div>
             </div>
           </div>
@@ -660,52 +666,59 @@ layout: index
           <div class="card">
             <div class="card-header" id="faqThree">
               <h3 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collasefaqThree"
-                  aria-expanded="false" aria-controls="collasefaqThree">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsefaqThree"
+                  aria-expanded="false" aria-controls="collapsefaqThree">
                   Why is BigEarthNet v2.0 smaller than v1.0?
                 </button>
               </h3>
             </div>
-            <div id="collasefaqThree" class="collapse" aria-labelledby="faqThree" data-parent="#accordion">
+            <div id="collapsefaqThree" class="collapse" aria-labelledby="faqThree" data-parent="#accordion">
               <div class="card-body">
-                Because
+                BigEarthNet v2.0 uses the most recent CORINE Land Cover database of the year 2018
+                and the 19-class label nomenclature.
+                As a result some patches were completely or partially unlabeled and not included in the v2.0 dataset.
+                Also, four Sentinel-2 tiles from the v1.0 dataset were dropped due to failing
+                quality indicator checks.
+                For more details, see the official publication
+                <a href="{{ site.data.urls.reBEN-paper-url }}" target="_blank">
+                  reBEN: Refined BigEarthNet Dataset for Remote Sensing Image Analysis
+                </a>.
               </div>
             </div>
           </div>
           <!-- End - Card #3 -->
           <!-- Card #4 -->
-          <div class="card">
-            <div class="card-header" id="faqFour">
-              <h3 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collasefaqFour"
-                  aria-expanded="false" aria-controls="collasefaqFour">
-                  Why?
-                </button>
-              </h3>
-            </div>
-            <div id="collasefaqFour" class="collapse" aria-labelledby="faqFour" data-parent="#accordion">
-              <div class="card-body">
-                Because
-              </div>
-            </div>
-          </div>
+          <!-- <div class="card"> -->
+          <!-- <div class="card-header" id="faqFour"> -->
+          <!-- <h3 class="mb-0"> -->
+          <!-- <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsefaqFour" -->
+          <!-- aria-expanded="false" aria-controls="collapsefaqFour"> -->
+          <!-- Why? -->
+          <!-- </button> -->
+          <!-- </h3> -->
+          <!-- </div> -->
+          <!-- <div id="collapsefaqFour" class="collapse" aria-labelledby="faqFour" data-parent="#accordion"> -->
+          <!-- <div class="card-body"> -->
+          <!-- </div> -->
+          <!-- </div> -->
+          <!-- </div> -->
           <!-- End - Card #4 -->
           <!-- Card #5 -->
-          <div class="card">
-            <div class="card-header" id="faqFive">
-              <h3 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collasefaqFive"
-                  aria-expanded="false" aria-controls="collasefaqFive">
-                  Why?
-                </button>
-              </h3>
-            </div>
-            <div id="collasefaqFive" class="collapse" aria-labelledby="faqFive" data-parent="#accordion">
-              <div class="card-body">
-                Because
-              </div>
-            </div>
-          </div>
+          <!-- <div class="card"> -->
+          <!-- <div class="card-header" id="faqFive"> -->
+          <!-- <h3 class="mb-0"> -->
+          <!-- <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsefaqFive" -->
+          <!-- aria-expanded="false" aria-controls="collapsefaqFive"> -->
+          <!-- Why? -->
+          <!-- </button> -->
+          <!-- </h3> -->
+          <!-- </div> -->
+          <!-- <div id="collapsefaqFive" class="collapse" aria-labelledby="faqFive" data-parent="#accordion"> -->
+          <!-- <div class="card-body"> -->
+          <!-- Because -->
+          <!-- </div> -->
+          <!-- </div> -->
+          <!-- </div> -->
           <!-- End - Card #5 -->
         </div>
       </div>
@@ -746,4 +759,4 @@ layout: index
   </div>
 </footer>
 
-<a id="v1-button" href="{{ site.base_url }}v1.0">Click here for BigEarthNet v1.0</a>
+<a id="v1-button" href="{{ site.base_url }}v1.0">Click here for v1.0</a>

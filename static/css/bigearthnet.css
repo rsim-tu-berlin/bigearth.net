@@ -380,6 +380,7 @@ footer #footnote {
 	border: 1px solid black;
 	border-radius: 6px;
 	text-decoration: none;
+	font-variant: small-caps;
 }
 
 #v1-button:focus-within,
